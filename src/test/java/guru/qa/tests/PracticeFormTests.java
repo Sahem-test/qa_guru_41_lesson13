@@ -17,6 +17,7 @@ public class PracticeFormTests extends TestBase {
 
     @Test
     @Tag("smoke")
+    @Tag("homeWork")
     @DisplayName("Fill registration form, positive test")
     void fillPracticeFormPositiveTest() {
         step("Open registration form", () -> {
@@ -54,6 +55,7 @@ public class PracticeFormTests extends TestBase {
     }
 
     @Test
+    @Tag("homeWork")
     @DisplayName("Minimal required fields, positive test")
     void minimalRequiredFieldsPositiveTest() {
         step("Open registration form", () -> {
@@ -78,6 +80,7 @@ public class PracticeFormTests extends TestBase {
     }
 
     @Test
+    @Tag("homeWork")
     @DisplayName("Fill less then minimal required fields, negative test")
     void lessMinimalRequiredFieldsNegativeTest() {
         step("Open registration form", () -> {
@@ -95,6 +98,7 @@ public class PracticeFormTests extends TestBase {
     }
 
     @Test
+    @Tag("homeWork")
     @DisplayName("Phone has less required signs, negative test")
     void lessMinimalSignPhoneNegativeTest() {
         step("Open registration form", () -> {
@@ -114,6 +118,7 @@ public class PracticeFormTests extends TestBase {
     }
 
     @Test
+    @Tag("homeWork")
     @DisplayName("Empty form, negative test")
     void EmptyFormTest() {
         step("Open registration form", () -> {

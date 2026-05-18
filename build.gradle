@@ -48,6 +48,12 @@ tasks.register('smoke', Test) {
     }
 }
 
+tasks.register('homeWork_test', Test) {
+    useJUnitPlatform {
+        includeTags("homeWork")
+    }
+}
+
 tasks.withType(Test) {
     useJUnitPlatform()
     systemProperties(System.getProperties())
