@@ -16,7 +16,6 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class TestBase {
 
-    public PracticeFormPages practiceFormPages = new PracticeFormPages();
 
     @BeforeEach
     void addListener() {
@@ -25,8 +24,7 @@ public class TestBase {
 
     @BeforeAll
     static void setup() {
-        Configuration.baseUrl = System.getProperty("baseUrl");
-        Configuration.remote = System.getProperty("remote");
+        Configuration.baseUrl = "https://qa-guru.github.io/one-page-form";
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                 "enableVNC", true,
